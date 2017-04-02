@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0,user-scalable=no'>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="css/pl/coupon.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <title>优惠券--慢慢买</title>
+</head>
+
+<body>
+  <!--页面头部-->
+  <header>
+    <div class="back f_l">
+      <a href="index.html"></a>
+    </div>
+    <h1 class="f_l">优惠券</h1>
+    <div class="appDown f_l">
+      <a href="javascript:;"></a>
+    </div>
+  </header>
+  <!--页面头部-->
+
+  <!--优惠券区域-->
+  <div class="coupon_content">
+    <ul class="coupon_model clearfix">
+      <script id="coupons" type="text/html">
+        {{each result as value index}}
+        <li>
+          <a href="coupon_det.html?couponId={{value.couponId}}&couponTitle={{value.couponTitle}}">
+            <img src="{{value.couponImg}}" alt="">
+            <span>{{value.couponTitle}}</span>
+          </a>
+        </li>
+        {{/each}}
+      </script>
+
+    </ul>
+  </div>
+  <!--优惠券区域-->
+
+  <!--底部区域-->
+  <div class="goods_navBm">
+    <span><a href="index.html">首页</a>&nbsp;&gt;</span>
+    <span>优惠券</span>
+  </div>
+
+  <footer>
+    <div class="footer_top">
+      <a href="####" class="footer_log">登录</a>
+      <a href="####" class="footer_log">注册</a>
+      <a href="#" class="footer_back"><img src="images/returnTop.png" alt="">返回顶部</a>
+    </div>
+    <div class="footer_bottom">
+      <p>
+        <a href="http://m.manmanbuy.com/?o=download">手机APP下载</a> <a href="http://m.manmanbuy.com">
+                    慢慢买手机版</a> -- 掌上比价平台</p>
+      <p>
+        m.manmanbuy.com
+      </p>
+    </div>
+  </footer>
+  <!--底部区域-->
+
+</body>
+
+</html>
+<script src="js/jquery-1.12.2.js"></script>
+<script src="js/template.js"></script>
+<script src="js/pl/coupons.js"></script>

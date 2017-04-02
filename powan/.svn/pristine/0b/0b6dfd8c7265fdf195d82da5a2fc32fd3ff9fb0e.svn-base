@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/dp/cabbage.css">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+</head>
+
+<body>
+    <!--白菜价顶部-->
+    <div class="cabbage_heard">
+        <a class="cabbage_heard_left glyphicon glyphicon-menu-left" href='http://m.manmanbuy.com/' alt=''></a>
+        <p>白菜价淘宝内部券</p>
+        <a class="cabbage_heard_right f_r" href='http://m.manmanbuy.com/' alt=''></a>
+    </div>
+
+    <!--白菜价导航-->
+    <div class="cabbage_nav">
+        <div class="cabbage_nav_all">
+            <ul>
+                <li><a href="#">热销中</a></li>
+                <li><a href="#">热销中</a></li>
+                <li><a href="#">热销中</a></li>
+                <li><a href="#">热销中</a></li>
+                <li><a href="#">热销中</a></li>
+                <li><a href="#">热销中</a></li>
+                <li><a href="#">热销中</a></li>
+                <li><a href="#">热销中</a></li>
+                <li><a href="#">热销中</a></li>
+                <li><a href="#">热销中</a></li>
+                <li><a href="#">热销中</a></li>
+                <li><a href="#">热销中</a></li>
+                <li><a href="#">热销中</a></li>
+            </ul>
+        </div>
+        <a href="#"><span class="glyphicon glyphicon-search"></span></a>
+    </div>
+
+    <!--白菜价图片-->
+    <div class="cabbage_img">
+        <img src="http://misc.manmanbuy.com/images/quanpic/quan_banner_wap.png" alt="">
+    </div>
+
+    <!--白菜价content-->
+    <div class="cabbage_content">
+        <div class="media">
+            <div class="media-left media-middle">
+                <a href="#">
+                    <img class="media-object" src="..." alt="...">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">[包邮]郊外春游草地垫沙滩坐垫</h4>
+                <div class="content_pr">
+                    <i>券后</i>
+                    <em>¥</em>
+                    9.9
+                    <del>¥15</del>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cabbage_content">
+
+    </div>
+
+    <div class="cabbage_content">
+
+    </div>
+
+    <!--白菜价底部返回-->
+    <div class="cabbage_endback">
+        <a href='#' alt=''>首页</a> &gt;
+        <a href='#' alt=''>白菜价</a>
+    </div>
+
+    <!--白菜价下载-->
+    <div class="cabbage_link media">
+        <div class="media-left media-middle">
+            <a href="#">
+                <img class="media-object" src="../../img/logo.png" alt="...">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">慢买买APP</h4>
+            <p>给喜欢网购的同学推荐下[慢慢买]这个app,第一时间更新国内外的优惠信息</p>
+            <a href='#' alt=''>立即下载</a>
+        </div>
+    </div>
+
+    <!--白菜价底部-->
+    <div class="cabbage_footer">
+        <p>
+            <a class="foot_one" href='#' alt=''>手机APP下载</a>
+            <a class="foot_two" href='#' alt=''>慢慢买手机版--</a>掌上比价平台
+        </p>
+        <p>m.manmanbuy.com/</p>
+    </div>
+</body>
+
+</html>

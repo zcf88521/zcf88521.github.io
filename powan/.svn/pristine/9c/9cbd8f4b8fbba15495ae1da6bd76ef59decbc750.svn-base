@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>商城导航 -- 慢慢买</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="css/zcf/goods_nav.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/normalize.css">
+
+</head>
+
+<body>
+
+  <!--页面顶部-->
+  <header>
+    <div class="back f_l">
+      <a href="index.html"></a>
+    </div>
+    <h1 class="f_l">商城导航</h1>
+    <div class="appDown f_l">
+      <a href="javascript:;"></a>
+    </div>
+  </header>
+  <!--页面顶部-->
+
+  <!--商城导航区域-->
+  <div class="goods_nav_content clearfix">
+    <script id="goods_nav" type="text/html">
+      {{each result as value index}}
+      <a href="{{value.navHref}}" target="_blank">
+        <img src="{{value.navImg}}" alt="">
+        <span>{{value.navTitle}}</span>
+      </a>
+      {{/each}}
+    </script>
+  </div>
+  <!--商城导航区域-->
+
+  <!--底部区域-->
+  <!--底部区域-->
+  <div class="goods_navBm">
+    <span><a href="index.html">首页</a>&nbsp;&gt;</span>
+    <span>商城导航</span>
+  </div>
+
+
+  <footer>
+    <div class="footer_top">
+      <a href="####" class="footer_log">登录</a>
+      <a href="####" class="footer_log">注册</a>
+      <a href="#" class="footer_back"><img src="images/returnTop.png" alt="">返回顶部</a>
+    </div>
+    <div class="footer_bottom">
+      <p>
+        <a href="http://m.manmanbuy.com/?o=download">手机APP下载</a> <a href="http://m.manmanbuy.com">
+                    慢慢买手机版</a> -- 掌上比价平台</p>
+      <p>
+        m.manmanbuy.com
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
+<script src="js/jquery-1.12.2.js"></script>
+<script src="js/template.js"></script>
+<script src="js/zcf/goods_nav.js"></script>

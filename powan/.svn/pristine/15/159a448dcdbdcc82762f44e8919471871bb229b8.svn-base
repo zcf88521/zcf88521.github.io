@@ -1,0 +1,53 @@
+header {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  background: #ff841d;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 44px;
+}
+header a {
+  display: block;
+  width: 50px;
+  height: 44px;
+}
+header .back {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+header .back a {
+  background: url(../../images/arr_left.png) no-repeat center;
+}
+header h1 {
+  -webkit-box-flex: 6;
+  -webkit-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  display: block;
+  line-height: 44px;
+  text-align: center;
+  font-size: 1.1em;
+  color: white;
+  font-weight: 600;
+  margin: 0;
+}
+header .appDown {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+}
+header .appDown a {
+  background: url(../../images/header_app.png) no-repeat center/35px 35px;
+}

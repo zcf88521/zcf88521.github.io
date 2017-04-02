@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <script src="../../js/jquery-1.12.2.js"></script>
+    <script src="../../js/template.js"></script>
+    <link rel="stylesheet" href="../../css/yzb/ppda_child.css">
+</head>
+
+<body>
+    <header>
+        <div class=".top"> <a href="#">首页</a> &gt; <a href="#"> 品牌大全</a> &gt; LED电视哪个牌子好</div>
+
+    </header>
+    <div class="hd">
+        <h3>LED电视哪个牌子好</h3>
+    </div>
+
+    <ul>
+        <li><a href="#" title="三星LED电视"><em class="top1">1</em><div class="inner"><div class="tit">三星LED电视</div><p>30天全网销量：216902件</p></div></a></li>
+    </ul>
+</body>
+
+</html>

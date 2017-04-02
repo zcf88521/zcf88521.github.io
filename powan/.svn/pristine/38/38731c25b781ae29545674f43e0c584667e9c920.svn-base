@@ -1,0 +1,12 @@
+$(function () {
+  var btnLis = $(".tabs li");
+  var tabDiv = $(".tab-content div");
+  btnLis.on("click", function () {
+    index = $(this).index();
+    if(tabDiv.eq(index).hasClass("show")){
+      tabDiv.eq(index).removeClass("show");
+    }else{
+      tabDiv.eq(index).addClass("show").siblings().removeClass("show");
+    }
+  })
+})

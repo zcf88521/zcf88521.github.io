@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="../../css/ljj/inland_detail.css">
+  <link rel="stylesheet" href="../../css/bootstrap.css">
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/base.css">
+  <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <title></title>
+</head>
+
+<body>
+  <!--国内折扣头部-->
+  <header id="header">
+    <a href="JavaScript:void(0)" class="bk"></a>
+    <h1>国内折扣</h1>
+    <a href="JavaScript:void(0)" class="app"></a>
+  </header>
+
+  <!--商品介绍区-->
+  <div id="explain">
+    <div class="container">
+      <!--商品区-->
+      <div class="content">
+        <!--前往购买按钮-->
+        <div class="goBuy">
+          <a href="javaScript:void(0)">前往购买</a>
+        </div>
+      </div>
+      <!--二维码-->
+      <div class="qrCode">
+        <img src="../../images/mmbweixin2.png" alt="">
+      </div>
+      <!--评论-->
+      <div class="comments">
+        <div class="tit"> 发表评论</div>
+        <div class="reply">
+          <div class="form">
+            <!--评论文本框-->
+            <textarea rows="3"></textarea>
+            <!--提交按钮-->
+            <div class="ctrl">
+              <input value="发表评论" class="tjdp" type="submit">
+            </div>
+          </div>
+        </div>
+        <div class="tit"> 最新评论</div>
+        <div class="list">
+          <ul> </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--导航目录-->
+  <div id="directory">
+    <a href="JavaScript:void(0)">首页</a>&nbsp;>&nbsp;<a href="javaScript:void(0)">超值推荐</a>&nbsp;>&nbsp;<a href="javaScript:void(0)"></a>
+  </div>
+
+  <!--底部-->
+  <div class="footer">
+    <div class="footer-top  clearfix">
+      <a href="JavaScript:void(0)">登录</a>
+      <a href="JavaScript:void(0)">注册</a>
+      <a href="JavaScript:void(0)" style="width:40%;border-right: none;"><img src="../../images/top.jpg" alt="">返回顶部</a>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        <a href="JavaScript:void(0)">手机APP下载</a>
+        <a href="JavaScript:void(0)">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+</body>
+
+</html>
+<!--JQ-->
+<script src="../../js/jquery-1.12.2.js"></script>
+<!--bootstarp-->
+<script src="../../js/bootstrap.js"></script>
+<!--模板引擎-->
+<script src="../../js/template.js"></script>
+<!--商品介绍模版-->
+<script id="detail" type="text/html">
+  <!--标题-->
+  <h3 class="title">{{productName}}</h3>
+  <!--价格-->
+  <h4 class="price">{{productPrice}}</h4>
+  <!--商品来源信息-->
+  <div class="info"><span>{{productFrom}}</span><span>{{productTime}}</span><span>{{productTips}}</span><span><a href="javaScript:void(0)">有1人评论</a></span></div>
+  <!--商品介绍文本-->
+  <div class="text">
+    <div class="media">
+      <div class="media-body">
+        <h4 class="media-heading">
+          {{productInfo}}
+        </h4>
+      </div>
+      <div class="media-right">
+        <a href="#">
+          {{#productImg}}
+        </a>
+      </div>
+    </div>
+  </div>
+</script>
+<script src="../../js/ljj/inland_detail.js"></script>

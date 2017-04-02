@@ -1,0 +1,71 @@
+// 头部样式=---------------------------------------
+header {
+    height: 51px;
+    background-color: #ff841d;
+    border-bottom: 1px solid #e6e6e6;
+    a {
+        display: block;
+        height: 100%;
+        img {
+            overflow: hidden;
+        }
+    }
+    .header_left {
+        width: 75%;
+        margin-left: 5px;
+        padding: 12px;
+        img {
+            max-height: 25px;
+        }
+    }
+    .header_right {
+        padding: 7px;
+        img {
+            max-height: 34px;
+        }
+    }
+    .header_hidden {
+        background: #EFEFEF;
+        border-bottom: 1px solid #ddd;
+        height: 44px;
+        position: fixed;
+        display: none;
+        .btn_serach {
+            height: 44px;
+            width: 44px;
+            overflow: hidden;
+            position: relative;
+            color: transparent;
+        }
+    }
+}
+
+// 搜索栏-----------------------------------------------------------------
+.goods_serach {
+    border-bottom: 1px solid #e6e6e6;
+    // height: 30px;
+    padding: 10px;
+    position: relative;
+    background-color: White;
+    input {
+        font-size: 16px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 15px;
+    }
+    .serachText {
+        background: #f1f1f1;
+        padding-left: 10px;
+        width: 90%;
+        padding-left: 5%;
+        border: none;
+    }
+    .serachBtn {
+        width: 63px;
+        background: #ff841d;
+        color: #FFFFFF;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}

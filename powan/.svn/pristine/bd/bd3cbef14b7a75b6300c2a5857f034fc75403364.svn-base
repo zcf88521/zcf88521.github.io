@@ -1,0 +1,95 @@
+﻿@charset "UTF-8";
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.f_l {
+  float: left;
+}
+
+.f_r {
+  float: right;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: block;
+  line-height: 0;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+input {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  color: #666;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/*边框样式*/
+.bor_t {
+  border-top: 1px solid #ccc;
+}
+
+.bor_r {
+  border-right: 1px solid #ccc;
+}
+
+.bor_b {
+  border-bottom: 1px solid #ccc;
+}
+
+.bor_l {
+  border-left: 1px solid #ccc;
+}
+//适应屏幕的字体大小
+@media screen and (width: 320px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media screen and (width: 360px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (width: 375px) {
+  html {
+    font-size: 18.75px;
+  }
+}
+@media screen and (width: 414px) {
+  html {
+    font-size: 20.7px;
+  }
+}
+@media screen and (width: 412px) {
+  html {
+    font-size: 20.6px;
+  }
+}

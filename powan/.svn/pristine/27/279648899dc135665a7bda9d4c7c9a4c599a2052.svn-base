@@ -1,0 +1,30 @@
+'use strict';
+
+$(function() {
+    var index = 1
+    $.ajax({
+        url: 'http://139.199.157.195:9090/api/getmoneyctrl',
+        data: { pageid: index },
+        type: 'get',
+        success: function(data) {
+            var result = template('template', data);
+            $('.contain_top').append(result);
+        }
+    })
+
+    // 左右按钮事件
+    $('.next_b').on('click', function() {
+        index++;
+        $.ajax({
+            url: 'http://139.199.157.195:9090/api/getmoneyctrl',
+            data: { pageid: index },
+            type: 'get',
+            success: function(data) {
+                var result = template('template', data);
+                $('.contain_top').append(result);
+            }
+        })
+        console.log(index);
+    })
+
+})

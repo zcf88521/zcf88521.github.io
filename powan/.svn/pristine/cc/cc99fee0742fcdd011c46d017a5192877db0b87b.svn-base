@@ -1,0 +1,24 @@
+'use strict';
+
+$(function () {
+  // 导航栏ajax请求-------------------------------------
+  $.ajax({
+    url: 'http://139.199.157.195:9090/api/getindexmenu',
+    data: {}, //请求内容为空
+    type: 'get',
+    success: function (data) {
+      var result = template('template', data);
+      $('.goods_nav').append(result);
+    }
+  })
+  // 折扣推荐区域ajax请求------------------------------
+  $.ajax({
+    url: 'http://139.199.157.195:9090/api/getmoneyctrl',
+    data: {}, //请求内容为空
+    type: 'get',
+    success: function (data) {
+      var result = template('template2', data);
+      $('.discount_con ul').append(result);
+    }
+  })
+})

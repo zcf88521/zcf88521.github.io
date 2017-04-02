@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>商城导航 -- 慢慢买</title>
+  <link rel="shortcut icon" href="../../favicon.ico" />
+  <link rel="stylesheet" href="../../css/zcf/goods_nav.css">
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/normalize.css">
+  
+</head>
+
+<body>
+  <script id="goods_nav" type="text/html">
+  {{each result as value index}}
+      <a href="{{value.navHref}}" target="_blank">
+        <img src="{{value.navImg}}" alt="">
+        <span>{{value.navTitle}}</span>
+      </a>
+  {{/each}}
+  </script>
+  <!--页面顶部-->
+  <header>
+    <div class="back f_l">
+      <a href="javascript:;"></a>
+    </div>
+    <h1 class="f_l">商城导航</h1>
+    <div class="appDown f_l">
+      <a href="javascript:;"></a>
+    </div>
+  </header>
+  <!--页面顶部-->
+
+  <!--商城导航区域-->
+  <div class="goods_nav_content clearfix">
+    
+  </div>
+  <!--商城导航区域-->
+
+  <!--底部区域-->
+  <!--底部区域-->
+   <div class="goods_navBm">
+    <span><a href="../../index.html">首页</a>&nbsp;&gt;</span>
+    <span>商城导航</span>
+  </div>
+
+</body>
+
+</html>
+<script src="../../js/jquery-1.12.2.js"></script>
+<script src="../../js/template.js"></script>
+<script>
+  // var myTemplate=template("goods_nav")
+  var navContent=document.querySelector(".goods_nav_content");
+  
+  $.ajax({
+    type:"get",
+    url:"http://139.199.157.195:9090/api/getsitenav",
+    dataType:"json",
+    success:function(data){
+      console.log(data);
+     
+      var myTemplate=template("goods_nav",data);
+      $(navContent).append(myTemplate);
+    }
+  })
+  
+</script>

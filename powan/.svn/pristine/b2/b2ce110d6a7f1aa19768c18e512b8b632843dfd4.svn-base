@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/pl/index.css">
+  <title> 慢慢买比价网--手机版</title>
+</head>
+<!--头部----------------------------------------=-->
+<header class="clearfix">
+  <div class="header_left f_l">
+    <a href="####"><img src="images/header_logo.png" alt="	慢慢买比价网--手机版"></a>
+  </div>
+  <div class="header_right f_r">
+    <a href="####"><img src="images/header_app.png" alt="手机app下载"></a>
+  </div>
+  <div class="header_hidden">
+    <a href="####" class="btn_serach"></a>
+    <div class="hidden_nav1"></div>
+    <div class="hidden_nav1"></div>
+    <a href="####"></a>
+  </div>
+</header>
+<!--商品搜索栏------------------------------------------>
+<div class="goods_serach">
+  <form action="####">
+    <input type="serach" class="serachText" placeholder="请输入你想比价的商品">
+    <input type="submit" value="搜索" class="serachBtn">
+  </form>
+</div>
+<!--分类导航=================================================-->
+<div class="goods_nav">
+  <script id="template" type="text/html">
+    {{each result as value index}}
+    <div class="area-item">
+      <a href="{{value.titlehref}}">
+        <div class="pic">
+          {{#value.img}}
+        </div>
+        <div class="name">
+          {{value.name}}
+        </div>
+      </a>
+    </div>
+    {{/each}}
+  </script>
+  <script src='js/jquery-1.12.2.js'></script>
+  <script src='js/template.js'></script>
+  <script>
+    $(function () {
+      $.ajax({
+        url: 'http://139.199.157.195:9090/api/getindexmenu',
+        data: {},
+        type: 'get',
+        success: function (data) {
+          console.log(data);
+          var result = template('template', data);
+          $('.goods_nav').append(result);
+        }
+      })
+    })
+  </script>
+
+</div>
+
+<body>
+
+</body>
+
+</html>

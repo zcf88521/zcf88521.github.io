@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/ymf/compare.css">
+    <!--这个样式是从主页引进的-->
+    <link rel="stylesheet" href="../../css/pl/index.css">
+
+
+</head>
+
+<body>
+    <!--头部=============================================-->
+    <header class="clearfix">
+        <div class="header_left f_l">
+            <a href="####"><img src="../../images/header_logo.png" alt="	慢慢买比价网--手机版"></a>
+        </div>
+        <div class="header_right f_r">
+            <a href="####"><img src="../../images/header_app.png" alt="手机app下载"></a>
+        </div>
+        <div class="header_hidden">
+            <a href="####" class="btn_serach"></a>
+            <div class="hidden_nav1"></div>
+            <div class="hidden_nav1"></div>
+            <a href="####"></a>
+        </div>
+    </header>
+
+    <!--商品搜索栏=========================================-->
+    <div class="goods_serach clearfix">
+        <form action="####">
+            <input type="serach" class="serachText" placeholder="请输入你想比价的商品">
+            <input type="submit" value="搜索" class="serachBtn">
+        </form>
+    </div>
+
+    <!--比价搜索===========================================-->
+    <div class="comparePrice">
+        <ul class="item-compare" id="item-compare">
+            <!--坑-->
+        </ul>
+    </div>
+
+    <!--底部==============================================-->
+    <footer>
+        <div class="footer_top">
+            <a href="####" class="footer_log">登录</a>
+            <a href="####" class="footer_log">注册</a>
+            <a href="#" class="footer_back"><img src="../../images/returnTop.png" alt="">返回顶部</a>
+        </div>
+        <div class="footer_bottom">
+            <p>
+                <a href="http://m.manmanbuy.com/?o=download">手机APP下载</a> <a href="http://m.manmanbuy.com">
+                    慢慢买手机版</a> -- 掌上比价平台</p>
+            <p>
+                m.manmanbuy.com
+            </p>
+        </div>
+    </footer>
+
+    <!--悬浮app链接=====================================-->
+    <div class="app_link">
+        <a href="http://m.manmanbuy.com/?o=download">
+            <img src="../../images/app_link.png">
+    </div>
+</body>
+
+</html>
+<!--在比价搜索处使用模板引擎======================-->
+<script id="template" type="text/html">
+    {{each result as value index}}
+    <!--自定义一个属性获取id-->
+    <li data-titleid={{value.titleId}}>
+        <a class="border" href="JavaScript:void(0)"><span>{{value.title}}</span><span class="glyphicon glyphicon-menu-down"></span></a>
+        <div class="container-fluid">
+            <div class="row">
+                <!--坑-->
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</script>
+<!--在上面的模板中再次使用模板==========================-->
+<script id="tem" type="text/html">
+    {{each result as value index}}
+    <div class="col-md-4 col-xs-4 "><a href="shopping.html?categoryId={{value.categoryId}}">{{value.category}}</a></div>
+    {{/each}}
+</script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../../js/jquery-1.12.2.js"></script>
+<!-- Include <a href="#">平板电视</a> compiled plugins (below), or include individual files as needed -->
+<script src="../../js/bootstrap.js"></script>
+<script src="../../js/template.js"></script>
+<script src="../../js/ymf/comparePrice.js"></script>

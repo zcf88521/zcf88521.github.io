@@ -1,0 +1,124 @@
+'use strict';
+window.onload = function () {
+    // 设置左边滚动
+    leftScroll();
+}
+
+// 导航栏滚动
+function leftScroll() {
+    // 定义变量
+    // 移动的ul
+    var moveUl = document.querySelector('#mvoeUl');
+
+    // 起始坐标
+    var startX = 0;
+    // 上一次 移动的距离 默认位0
+    var distanceX = 0;
+    // 当前这一次 移动的距离 
+    var moveX = 0;
+
+    // 最大的 y坐标
+    var maxX = 0;
+
+    // 最小的y坐标
+    var minX = document.body.offsetWidth - document.querySelector('.cabbage_nav_all ul').offsetWidth;
+
+    // 间隙
+    var delayX = 50;
+
+    // 逻辑代码
+    /**
+     * 记录起始的y坐标
+     * 清除过渡
+     */
+    moveUl.addEventListener('touchstart', function (event) {
+        // 记录起始值
+        startX = event.touches[0].clientX;
+        // 清除过渡
+        moveUl.style.transition = 'none';
+    })
+
+    /**
+     * 在 上一次移动距离的 基础上 再次偏移
+     * 判断是否越界
+     *    是否越界
+     */
+    moveUl.addEventListener('touchmove', function (event) {
+        // 计算移动的距离
+        moveX = event.touches[0].clientX - startX;
+
+        // 先进行计算
+        var currentMove = moveX + distanceX;
+
+        // 判断是否越界
+        // 如果大于最大值  还原为最大值
+        if (currentMove > (maxX + delayX)) {
+            currentMove = (maxX + delayX);
+        } else if (currentMove < (minX - delayX)) {
+            // 如果 小于 最小值 还原为 最小值
+            currentMove = (minX - delayX);
+        }
+        // 移动元素
+        moveUl.style.transform = 'translateX(' + currentMove + 'px)';
+    })
+
+    /**
+     * 记录 当前这一次 移动的 总距离
+     *  判断是上吸附还是 下吸附
+     *  吸附回去
+     *  开启过渡
+     */
+    moveUl.addEventListener('touchend', function (event) {
+        // 保存 移动的 总距离
+        distanceX = distanceX + moveX;
+
+        // 判断 是要 左吸附 
+        if (distanceX > maxX) {
+            distanceX = maxX;
+        }
+        // 还是右吸附
+        else if (distanceX < minX) {
+            distanceX = minX;
+        }
+        // 每一次 移动完毕之后 moveX
+        moveX = 0;
+
+        // 添加过渡属性
+        // moveUl.style.transition = 'all .5s';s
+        // 吸附回去
+        moveUl.style.transform = 'translateX(' + distanceX + 'px)';
+
+
+        // 获取 并 记录a标签的高度
+        var clickAs = document.querySelectorAll('.cabbage_nav_all a');
+        var eachWidth = clickAs[0].offsetWidth;
+        for (var i = 0; i < clickAs.length; i++) {
+            // 为每一个 a标签 添加一个 自定义属性
+            clickAs[i].index = i;
+            itcast_tap(clickAs[i], function (event) {
+                console.log('tap触发' + event);
+                console.log(event.target.index);
+                var distanceX = eachWidth * -event.target.index;
+                // 排他
+                for (var j = 0; j < clickAs.length; j++) {
+                    clickAs[j].classList.remove('bt');
+                }
+                // 高亮自己
+                event.target.classList.add('bt');
+
+            })
+        }
+    })
+}
+
+//导航栏赋值
+var titleId = getQueryString('type');
+function getQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]); return null;
+}
+
+
+
+

@@ -1,0 +1,238 @@
+// 第一页比价搜索
+.comparePrice {
+    ul {
+        width: 100%;
+        border: 1px solid #cccccc;
+        background-color: #ebebeb;
+        border-radius: 8px;
+        li {
+            border-top: 1px solid #cccccc;
+            a {
+                text-decoration: none;
+                height: 40px;
+                display: block;
+                border-top: 1px solid #cccccc;
+                padding-left: 16px;
+                padding-right: 14px;
+                cursor: point;
+                color: black;
+                display: flex;
+                justify-content: space-between;
+                span:nth-child(1) {
+                    line-height: 40px;
+                    font-weight: 900;
+                }
+                span:nth-child(2) {
+                    font-size: 15px;
+                    line-height: 40px;
+                }
+                // span:nth-child(2).current{
+                //     transform: rotate(180deg);
+                // }
+                
+            }
+            .border {
+                border-top: none;
+            }
+        }
+        li:first-child {
+            border-top: none;
+        }
+        div.container-fluid {
+            background-color: #f9f9f9;
+            display: none;
+        }
+        div.container-fluid.current {
+            display: block !important;
+        }
+        .row {
+            div {
+                border-bottom: 1px solid #cccccc;
+                border-right: 1px solid #cccccc;
+                height: 40px;
+                line-height: 40px;
+                padding: 0;
+                a {
+                    text-decoration: none;
+                    display: block;
+                    text-align: center;
+                    border-top: none;
+                    padding: 0;
+                }
+            }
+            .no-bottom-border {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+//第二页商品详情页面==================================================
+.shopping {
+    box-sizing: border-box;
+    .shopping-top {
+        width: 100%;
+        height: 36px;
+        background-color: #f0f0f0;
+        line-height: 36px;
+        padding-right: 10px;
+        padding-left: 10px;
+        button {
+            margin-top: 7px;
+        }
+    }
+    .shopping-detail {
+        .media {
+            height: 144px;
+            padding-left: 140px;
+            padding-right: 8px;
+            position: relative;
+            .media-left {
+                position: absolute;
+                top: 23px;
+                left: 5px;
+                a {
+                    margin-top: 10px;
+                }
+            }
+            .media-body {
+                a {
+                    display: block;
+                    font-size: 15px;
+                    margin-top: 15px;
+                }
+                h3 {
+                    margin-top: 20px;
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+// 底部=================================================
+footer {
+    height: 178px;
+    background-color: #f2f2f2;
+    #footer {
+        .row {
+            margin-top: 20px;
+            div {
+                display: inline-block;
+                text-align: center;
+            }
+            .btn {
+                width: 86px;
+                height: 38px;
+                background-color: #e8e8e8;
+            }
+            .white {
+                background-color: white;
+                border-radius: 0;
+            }
+        }
+        .dropdown-menu {
+            left: 55px;
+            min-width: 90px;
+        }
+    }
+    .foot-link {
+        padding-left: 12px;
+        h4 {
+            margin-top: 28px;
+        }
+        h6 {
+            margin-top: 13px;
+        }
+    }
+}
+
+//第三页单个商品介绍=======================================
+.shopping {
+    .shopping-top {
+        overflow: hidden;
+        position: relative;
+        padding-right: 50px;
+        button {
+            position: absolute;
+            top: 0;
+            right: 8px;
+        }
+    }
+}
+
+.oneProduct {
+    h4 {
+        margin-top: 20px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .oneProduct-top {
+        position: relative;
+        height: 270px;
+        img {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            margin-left: -85px;
+        }
+    }
+    .product-tab {
+        .nav-tabs {
+            .product-width {
+                width: 33.3333%;
+                a {
+                    text-align: center;
+                    color: white;
+                    border: 1px solid #c14d00;
+                    background-color: #ffbd08;
+                    margin-right: 0;
+                }
+                &.active>a {
+                    background-color: #ff9c1a;
+                }
+            }
+        }
+    }
+}
+
+// 网友评价============================
+.productcom {
+    ul {
+        h5 {
+            background-color: #dbdbdb;
+            height: 40px;
+            text-align: center;
+            line-height: 35px;
+            border-top: 5px solid #7a7a7a;
+        }
+        li {
+            padding-left: 8px;
+            padding-right: 8px;
+            .comtop {
+                margin-top: 16px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .buyForm {
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+div.watch-detail {
+    margin-top: 10px;
+    height: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    a {
+        display: block;
+        line-height: 35px;
+        background-color: #e4e4e4;
+        border: 1px solid #bababa;
+        border-radius: 6px;
+    }
+}

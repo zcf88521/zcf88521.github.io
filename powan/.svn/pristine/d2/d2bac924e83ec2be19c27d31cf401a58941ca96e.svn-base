@@ -1,0 +1,276 @@
+body {
+  background: #f1f1f1;
+}
+
+header {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  background: #ff8b00;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 44px;
+  box-shadow: 0 2px 3px #ddd;
+}
+header a {
+  display: block;
+  width: 50px;
+  height: 44px;
+}
+header .back {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+header .back a {
+  background: url(../../images/arr_left.png) no-repeat center;
+}
+header h1 {
+  -webkit-box-flex: 6;
+  -webkit-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  display: block;
+  line-height: 44px;
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  font-weight: 500;
+  margin: 0;
+}
+header .appDown {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+}
+
+.select_box {
+  position: relative;
+  margin-top: 3px;
+  background: #fff;
+}
+.select_box .tabs {
+  padding: 0;
+  height: 38px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.select_box .tabs li {
+  line-height: 38px;
+  text-align: center;
+  font-size: .8em;
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+.select_box .tabs li a {
+  display: block;
+}
+.select_box .tabs li i {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  background: url("../../images/goods_down.svg") no-repeat center/20px 20px;
+}
+.select_box .tabs li i.upi {
+  background: url("../../images/goods_up.svg") no-repeat center/20px 20px;
+}
+.select_box .tabs li:last-of-type {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+.select_box .tabs li .sift {
+  margin: 0 auto;
+  display: block;
+  width: 38px;
+  height: 38px;
+  background: url("../../images/sift.svg") no-repeat center/25px 25px;
+}
+.select_box .tabs li .sift.closexxx {
+  background: url("../../images/closexxx.svg") no-repeat center/25px 25px;
+}
+.select_box .tab-content {
+  position: absolute;
+  left: 0px;
+  top: 39px;
+  width: 100%;
+  z-index: 99;
+  background: white;
+}
+.select_box .tab-content .tabs-1, .select_box .tab-content .tabs-2, .select_box .tab-content .tabs-3, .select_box .tab-content li {
+  background: white;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  border-bottom: 1px solid #dadada;
+  position: relative;
+  box-sizing: border-box;
+  font-size: .9em;
+}
+.select_box .tab-content .tabs-1 a, .select_box .tab-content .tabs-2 a, .select_box .tab-content .tabs-3 a, .select_box .tab-content li a {
+  padding-left: 5px;
+}
+.select_box .tab-content .tabs-1 s, .select_box .tab-content .tabs-2 s, .select_box .tab-content .tabs-3 s, .select_box .tab-content li s {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  height: 20px;
+  width: 20px;
+  background: url(../../images/selectGou.svg) no-repeat;
+  display: none;
+}
+.select_box .tab-content .tabs-1 s.showS, .select_box .tab-content .tabs-2 s.showS, .select_box .tab-content .tabs-3 s.showS, .select_box .tab-content li s.showS {
+  display: block;
+}
+.select_box .tab-content > div {
+  display: none;
+}
+.select_box .tab-content .show {
+  display: block;
+}
+.select_box .tab-content .hiddn {
+  display: none;
+}
+.select_box .tabs-sift {
+  background: #f7f7f7;
+  padding: 10px 0;
+  border-bottom: 1px solid #dadada;
+  padding-left: 10px;
+}
+.select_box .tabs-sift .sift-seach {
+  margin-bottom: 10px;
+  width: 85%;
+  position: relative;
+  line-height: 35px;
+  background: white;
+  font-size: .8em;
+  color: #ccc;
+}
+.select_box .tabs-sift .sift-seach input {
+  width: 100%;
+  height: 35px;
+  padding: 0px 28px;
+  box-shadow: 0 0 2px orange;
+  color: #666;
+}
+.select_box .tabs-sift .sift-seach i, .select_box .tabs-sift .sift-seach b {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.select_box .tabs-sift .sift-seach i {
+  top: 8px;
+  left: 6px;
+  background-image: url(../../images/fangdajing.svg);
+}
+.select_box .tabs-sift .sift-seach b {
+  display: none;
+  top: 8px;
+  right: 6px;
+  background-image: url("../../images/yuanxx.svg");
+}
+.select_box .tabs-sift .seachBtn {
+  width: 15%;
+  height: 35px;
+  text-align: center;
+}
+.select_box .tabs-sift .seachBtn input {
+  line-height: 35px;
+  font-size: .7em;
+  background: transparent;
+}
+.select_box .sift-select {
+  padding: 0 10px 10px 0;
+}
+.select_box .sift-select h3 {
+  font-size: .8em;
+  padding: 10px;
+}
+.select_box .sift-select .selected span {
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  width: 22%;
+  float: left;
+  font-size: .7em;
+  text-align: center;
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+  margin: 0 10px 10px 0;
+}
+.select_box .select-span {
+  background: #ff9501;
+  color: white;
+  border: 1px solid #ff9501;
+}
+.select_box .sift-sort h3 {
+  padding: 10px;
+  font-size: .8em;
+}
+.select_box .sift-sort .sorts a {
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  width: 22%;
+  float: left;
+  font-size: .7em;
+  text-align: center;
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+  margin: 0 10px 10px 0;
+}
+
+.goodsShow .showUl {
+  padding: 6px;
+}
+.goodsShow .showUl li {
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+.goodsShow .showUl li a {
+  border: 1px solid #eee;
+  background: white;
+  display: block;
+  margin: 4px;
+}
+.goodsShow .showUl li a img {
+  width: 100%;
+  max-height: 144px;
+  display: block;
+}
+.goodsShow .showUl li a .title {
+  margin-top: 6px;
+  padding: 0 5px;
+  overflow: hidden;
+  font-size: .6em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 2px 0 2px 5px;
+}
+.goodsShow .showUl li a .price {
+  padding: 6px;
+  font-size: .8em;
+}
+.goodsShow .showUl li a .price span {
+  font-size: .4em;
+}

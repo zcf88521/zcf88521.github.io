@@ -1,0 +1,325 @@
+ // 头部
+#header {
+  height: 44px;
+  background-color: #ff841d;
+  width: 100%;
+  width: 100%;
+  position: relative;
+  padding: 0 50px;
+  text-align: center;
+  line-height: 44px;
+  a {
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    color: #fff;
+    font-size: 16px;
+    &:nth-of-type(1) {
+      left: 0;
+      top: 0;
+      background: url("../../images/arr_left.png") no-repeat center;
+    }
+    &:nth-of-type(2) {
+      top: 0;
+      right: 0;
+      background: url("../../images/header_app.png") no-repeat center /32px;
+    }
+  }
+  h1 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 44px;
+  }
+}
+
+// 商品介绍区
+#explain {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 960px;
+    .produc {
+      padding: 4px 10px;
+      // 标题
+      .title {
+        font-size: 18px;
+        margin: 10px auto 5px auto;
+        line-height: normal;
+        font-weight: 900;
+        color: #5a5a5a;
+      }
+      //价格
+      .price {
+        color: #ff6c00;
+        font-size: 15px;
+        display: block;
+        font-weight: 600;
+        line-height: normal;
+      }
+      //商品来源信息
+      .info {
+        color: #999999;
+        margin: 12px 0px;
+        font-size: 12px;
+        line-height: 24px;
+        span {
+          margin: 0 4px;
+          vertical-align: middle;
+          a {
+            color: #4682c5;
+            text-decoration: none;
+          }
+        }
+      }
+      //商品文本介绍
+      .text {
+        color: #606060;
+        padding-bottom: 20px;
+        // 文本
+        .media-body {
+          h4 {
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0;
+          }
+        }
+        // 图片
+        .media-right {
+          padding: 12px 0 0 10px;
+          a {
+            img {
+              width: 120px;
+              height: 120px;
+              display: block;
+              vertical-align: middle;
+            }
+          }
+        }
+        // 其余描述信息
+        p {
+          line-height: 24px;
+          font-size: 16px;
+          color: #606060;
+          margin: 6px auto;
+        }
+        // 细节图片大图
+        .imgs {
+          text-align: center;
+          img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            border: 0;
+          }
+        }
+        //  库存信息
+        #disstorck {
+          margin: 10px auto;
+          width: 30%;
+          min-width: 133px;
+          border: 1px solid #ebebeb;
+          padding: 5px 15px;
+          ;
+          li {
+            line-height: 24px;
+            border-bottom: 1px dashed #888;
+            position: relative;
+            strong {
+              position: absolute;
+              right: 0;
+              color: #ff6c00;
+            }
+          }
+        }
+      }
+      //前往购买按钮
+      .goBuy {
+        a {
+          height: 40px;
+          line-height: 40px;
+          display: block;
+          margin: 20px 10px;
+          background-color: #FF9000;
+          text-decoration: none;
+          color: #fff;
+          font-size: 14px;
+          border-radius: 5px;
+          text-align: center;
+        }
+      }
+    }
+    .qrCode {
+      margin: 20px 10px;
+      img {
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+        display: block;
+      }
+    }
+  }
+}
+
+// 评论区
+.comments {
+  color: #000;
+  .tit {
+    font-size: 16px;
+    padding: 6px 8px;
+  }
+  // 发表评论区
+  .reply {
+    padding: 6px 8px;
+    .form {
+      border: 2px solid #eceae8;
+      // 文本框
+      textarea {
+        padding: 4px 0 0 4px;
+        height: 68px;
+        line-height: 22px;
+        font-size: 14px;
+        color: #666;
+        resize: none;
+        border: none;
+        outline: none;
+        width: 100%;
+      }
+      // 提交按钮
+      .ctrl {
+        height: 37px;
+        background-color: #fbfbfb;
+        border-top: 1px solid #f2f2f2;
+        input {
+          float: right;
+          width: 100px;
+          height: 100%;
+          color: #fff;
+          text-align: center;
+          border-radius: 2px;
+          background-color: #ff841d;
+        }
+      }
+      .tit {
+        font-size: 16px;
+        padding: 6px 8px;
+      }
+    }
+  }
+  //用户评论区
+  .list {
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      border-bottom: 1px solid #e0e0e0;
+      //  用户头像
+      .userimg {
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        border-radius: 50%;
+        img {
+          width: 100%;
+          height: 100%;
+          display: block;
+          vertical-align: middle;
+        }
+      }
+      //  信息区
+      .con {
+        padding-left: 10px;
+        flex: 1;
+        //  名字/时间
+        .name {
+          font-size: 13px;
+          margin-bottom: 6px;
+          .username {
+            float: left;
+            color: #5799CC;
+          }
+          .time {
+            float: right;
+            color: #888;
+          }
+        }
+        //  内容
+        .content {
+          font-size: 15px;
+          line-height: 20px;
+          color: #606060;
+          .yinyong {
+            background-color: #FBFBFB;
+            border: 1px solid #eeeeee;
+            padding: 4px 6px;
+            border-radius: 3px;
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//  三级目录
+#directory {
+  margin-top: 20px;
+  height: 36px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ccc;
+  line-height: 36px;
+  padding-left: 8px;
+  padding-right: 163px;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 14px;
+  background: linear-gradient(top, #ffffff, #ebebeb);
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+//底部
+.footer {
+  background-color: #efefef;
+  margin-top: 25px;
+  .footer-top {
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    a {
+      border-right: 1px solid #c4c4c4;
+      text-align: center;
+      height: 34px;
+      line-height: 34px;
+      float: left;
+      font-size: 14px;
+      width: 30%;
+      color: #000;
+      img {
+        width: 15px;
+        height: 15px;
+        vertical-align: middle;
+        transform: translate(-5px, -2px);
+      }
+    }
+  }
+  .footer-bottom {
+    padding: 15px 0;
+    p {
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+      a {
+        &:nth-child(1) {
+          color: red;
+        }
+        &:nth-child(2) {
+          color: #000;
+        }
+      }
+    }
+  }
+}

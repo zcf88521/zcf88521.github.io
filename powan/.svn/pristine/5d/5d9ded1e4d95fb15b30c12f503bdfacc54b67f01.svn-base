@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <script src="../../js/jquery-1.12.2.js"></script>
+    <script src="../../js/template.js"></script>
+    <link rel="stylesheet" href="../../css/yzb/ppdq_index.css">
+    <script src="../../js/yzb/ppdq_index.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="shouye">
+            <a href="#">首页</a> >
+            <a href="#"> 品牌大全</a>
+        </div>
+
+
+        <div class="paihang">
+            热门品牌排行
+        </div>
+    </header>
+
+
+    <div class="nav">
+        <script id="template" type="text/html">
+            {{each result as value}}
+            <a href="#">
+            {{value.brandTitle}}
+            <!--平板电视十大品牌-->
+            </a> {{/each}}
+        </script>
+
+    </div>
+
+</body>
+
+</html>

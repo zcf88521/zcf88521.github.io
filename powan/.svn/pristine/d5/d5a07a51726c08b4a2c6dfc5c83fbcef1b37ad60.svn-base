@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.ico">
+  <title> 海淘折扣 -- 慢慢买</title>
+  <link rel="stylesheet" href="css/ljj/overseas.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/base.css">
+  <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <!--海外折扣头部-->
+  <header id="header">
+    <a href="index.html" class="bk"></span>
+    </a>
+    <h1>海淘折扣</h1>
+    <a href="JavaScript:void(0)" class="app"></a>
+  </header>
+  <!--导航目录-->
+  <div id="directory">
+    <a href="JavaScript:void(0)">首页</a>&nbsp;>&nbsp;<a href="JavaScript:void(0)">省钱控</a>&nbsp;>&nbsp;海淘折扣
+  </div>
+  <!--商品列表-->
+  <div id="goods">
+    <div class="container">
+      <ul>
+      </ul>
+    </div>
+  </div>
+  <!--分页栏-->
+  <div id="paging">
+    <div class="up"><button>上一页</button></div>
+    <div>
+      <select id="selectPage">
+
+      </select>
+    </div>
+    <div class="down"><button>下一页</button></div>
+  </div>
+  <!--底部-->
+  <div class="footer">
+    <div class="footer-top  clearfix">
+      <a href="JavaScript:void(0)">登录</a>
+      <a href="JavaScript:void(0)">注册</a>
+      <a href="JavaScript:void(0)" style="width:40%;border-right: none;"><img src="images/top.jpg" alt="">返回顶部</a>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        <a href="JavaScript:void(0)">手机APP下载</a>
+        <a href="JavaScript:void(0)">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+</body>
+
+</html>
+<!--JQ-->
+<script src="js/jquery-1.12.2.js"></script>
+<!--bootstarp-->
+<script src="js/bootstrap.js"></script>
+<!--模板引擎-->
+<script src="js/template.js"></script>
+<!--触摸点击封装方法-->
+<script src="js/touch_click.js"></script>
+<!--商品列表模版-->
+<script id="overseas" type="text/html">
+  {{each result as value index}}
+  <li>
+    <a href="overseas_detail.html?productid={{value.productId}}">
+      <div class="media">
+        <div class="media-left">
+          {{#value.productImg2}}
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">{{value.productName}}<span>{{value.productPinkage}}</span></h4>
+          <div class="other">
+            <span class="f_l">{{value.productFrom}}</span>
+            <span class="f_r">
+                    <i></i>
+                    {{value.productComCount}}
+                  </span>
+          </div>
+        </div>
+      </div>
+    </a>
+  </li>
+  {{/each}}
+</script>
+<script src="js/ljj/overseas.js"></script>

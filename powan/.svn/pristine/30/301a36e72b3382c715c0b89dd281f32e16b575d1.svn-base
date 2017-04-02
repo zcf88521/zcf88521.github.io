@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/template.js"></script>
+    <link rel="stylesheet" href="css/yzb/ppdq_index.css">
+    <link rel="stylesheet" href="css/pl/index.css">
+    <script src="js/yzb/ppdq_index.js"></script>
+</head>
+
+<body>
+    <header class="clearfix">
+        <div class="header_left f_l">
+            <a href="index.html"><img src="images/header_logo.png" alt="	慢慢买比价网--手机版"></a>
+        </div>
+        <div class="header_right f_r">
+            <a href="javascript:;"><img src="images/header_app.png" alt="手机app下载"></a>
+        </div>
+        <div class="header_hidden">
+            <a href="#" class="btn_serach"></a>
+            <!--跳到搜索品牌也-->
+            <div class="hidden_nav">
+                <a class='hidden_link' href="">省钱控</a>
+                <a class='hidden_link' href="">国内折扣</a>
+                <a class='hidden_link' href="">海淘折扣</a>
+            </div>
+            <a href="#" class="hidden_close">top</a>
+        </div>
+    </header>
+    <!--商品搜索栏-->
+    <div class="goods_serach clearfix">
+        <form action="#">
+            <input type="serach" class="serachText" placeholder="请输入你想比价的商品">
+            <input type="submit" value="搜索" class="serachBtn">
+        </form>
+    </div>
+    <div class="ppdqfff">
+        <div class="shouye">
+            <a href="index.html">首页</a> >
+            <a href="#"> 品牌大全</a>
+        </div>
+
+
+        <div class="paihang">
+            热门品牌排行
+        </div>
+        </d>
+
+
+        <div class="nav">
+            <script id="template" type="text/html">
+                {{each result as value}}
+                <a href="html/yzb/moneyctrl_child.html?brandTitleId={{value.brandTitleId}}">
+            {{value.brandTitle}}
+            <!--平板电视十大品牌-->
+            </a> {{/each}}
+            </script>
+
+        </div>
+        <footer>
+            <div class="footer_top">
+                <a href="####" class="footer_log">登录</a>
+                <a href="####" class="footer_log">注册</a>
+                <a href="#" class="footer_back"><img src="images/returnTop.png" alt="">返回顶部</a>
+            </div>
+            <div class="footer_bottom">
+                <p>
+                    <a href="http://m.manmanbuy.com/?o=download">手机APP下载</a> <a href="http://m.manmanbuy.com">
+                    慢慢买手机版</a> -- 掌上比价平台</p>
+                <p>
+                    m.manmanbuy.com
+                </p>
+            </div>
+        </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../css/ljj/inland.css">
+  <link rel="stylesheet" href="../../css/bootstrap.css">
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/base.css">
+  <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <title>省钱快曝 -- 慢慢买</title>
+</head>
+
+<body>
+  <!--国内折扣头部-->
+  <header>
+    <a href="JavaScript:void(0)" class="black"><span class="glyphicon glyphicon-chevron-left "></span></a>
+    <h1>国内折扣</h1>
+    <a href="JavaScript:void(0)" class="app"></a>
+  </header>
+  <!--导航目录-->
+  <div class="directory">
+    <a href="JavaScript:void(0)">首页</a>&nbsp;>&nbsp;省钱快曝
+  </div>
+  <!--商品列表-->
+  <div id="goods" class="container-fluid">
+    <ul class="row">
+      <li class="col-xs-6">
+        <a href="JavaScript:void(0)">
+          <div class="img"><img src="../../cs.jpg" alt=""></div>
+          <p class="title">Mentholatum 曼秀雷敦 植物润唇膏</p>
+          <p class="money">29.9元</p>
+          <div class="info">京东商城 | 2017/3/9 19:23</div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!--加载效果区-->
+  <div class="lodding">
+    <img src="../../images/loading.gif" alt="">
+  </div>
+  <!--底部-->
+  <div class="footer">
+    <div class="footer-top  clearfix">
+      <a href="JavaScript:void(0)">登录</a>
+      <a href="JavaScript:void(0)">注册</a>
+      <a href="JavaScript:void(0)" style="width:40%"><img src="../../images/top.jpg" alt="">注册</a>
+    </div>
+    <div class="footer-bottom"></div>
+  </div>
+</body>
+</html>
+<!--JQ-->
+<script src="../../js/jquery-1.12.2.js"></script>
+<!--bootstarp-->
+<script src="../../js/bootstrap.js"></script>

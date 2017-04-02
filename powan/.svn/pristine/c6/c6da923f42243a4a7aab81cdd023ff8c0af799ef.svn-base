@@ -1,0 +1,45 @@
+'use strict';
+$(function () {
+    getNav();
+    function getNav() {
+        $.ajax({
+            url: 'http://139.199.157.195:9090/api/getbaicaijiatitle',
+            success: function (data) {
+                console.log(data);
+                var result = template('template', data);
+                $('.cabbage_nav_all ul').append(result);
+                var clickAs = document.querySelectorAll('.cabbage_nav_all a');
+                // 获取 并 记录a标签的高度
+                var eachWidth = clickAs[0].offsetWidth;
+                for (var i = 0; i < clickAs.length; i++) {
+                    // 为每一个 a标签 添加一个 自定义属性
+                    clickAs[i].index = i;
+                    itcast_tap(clickAs[i], function (event) {
+                        console.log('tap触发' + event);
+                        console.log(event.target.index);
+                        var distanceX = eachWidth * -event.target.index;
+                        // 排他
+                        for (var j = 0; j < clickAs.length; j++) {
+                            clickAs[j].classList.remove('bt');
+                        }
+                        // 高亮自己
+                        event.target.classList.add('bt');
+
+                    })
+                }
+            }
+        })
+    }
+
+    getcontent();
+    function getcontent() {
+        $.ajax({
+            url: 'http://139.199.157.195:9090/api/getbaicaijiaproduct',
+            data: { titleid: 1 },
+            success: function (data) {
+                var result = template('content', data);
+                $('.cabbage_content ul').append(result);
+            }
+        })
+    }
+})

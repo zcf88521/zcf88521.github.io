@@ -1,0 +1,139 @@
+// 头部
+ #header {
+   height: 44px;
+   background-color: #ff841d;
+   width: 100%;
+   width: 100%;
+   position: relative;
+   padding: 0 50px;
+   text-align: center;
+   line-height: 44px;
+   a {
+     position: absolute;
+     height: 100%;
+     width: 50px;
+     color: #fff;
+     font-size: 16px;
+     &:nth-of-type(1) {
+       left: 0;
+       top: 0;
+     }
+     &:nth-of-type(2) {
+       top: 0;
+       right: 0;
+       background: url("../../images/header_app.png") no-repeat center /32px;
+     }
+   }
+   h1 {
+     font-size: 20px;
+     font-weight: 900;
+     color: #fff;
+     line-height: 44px;
+   }
+ }
+ 
+ // 商品列表
+ #goods {
+   .container {
+     padding: 0;
+     ul {
+       li {
+         padding: 14px 8px;
+         position: relative;
+         border-bottom: 1px solid #e0e0e0;
+         a {
+           text-decoration: none;
+           display: block;
+           .media-left {
+             padding: 0;
+             img {
+               width: 100px;
+               display: block;
+               vertical-align: middle;
+             }
+           }
+           .media-body {
+             h4 {
+               color: #333;
+               font-size: 15px;
+               font-weight: 500;
+               min-height: 57px;
+               margin: 0;
+               span {
+                 color: #ff6c00;
+               }
+             }
+             .other {
+               margin-top: 8px;
+               color: #a1a1a1;
+               line-height: 1;
+               i {
+                 margin-right: 2px;
+                 width: 15px;
+                 height: 15px;
+                 background: url("../../images/comment.png")no-repeat center/15px 11px;
+                 float: left;
+               }
+             }
+           }
+         }
+       }
+     }
+   }
+ }
+ //  三级目录
+ #directory {
+   height: 36px;
+   border-top: 1px solid #ebebeb;
+   border-bottom: 1px solid #ccc;
+   line-height: 36px;
+   padding-left: 8px;
+   font-size: 14px;
+   background: linear-gradient(top, #ffffff, #ebebeb);
+   a {
+     color: #000;
+     text-decoration: none;
+   }
+ }
+ 
+ // 底部
+ .footer {
+   background-color: #efefef;
+   margin-top: 25px;
+   .footer-top {
+     border-top: 1px solid #c4c4c4;
+     border-bottom: 1px solid #c4c4c4;
+     a {
+       border-right: 1px solid #c4c4c4;
+       text-align: center;
+       height: 34px;
+       line-height: 34px;
+       float: left;
+       font-size: 14px;
+       width: 30%;
+       color: #000;
+       img {
+         width: 15px;
+         height: 15px;
+         vertical-align: middle;
+         transform: translate(-5px, -2px);
+       }
+     }
+   }
+   .footer-bottom {
+     padding: 15px 0;
+     p {
+       text-align: center;
+       font-size: 12px;
+       color: #666;
+       a {
+         &:nth-child(1) {
+           color: red;
+         }
+         &:nth-child(2) {
+           color: #000;
+         }
+       }
+     }
+   }
+ }

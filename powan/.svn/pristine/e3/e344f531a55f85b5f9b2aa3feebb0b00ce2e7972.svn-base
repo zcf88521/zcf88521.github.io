@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/dp/cabbage.css">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+</head>
+
+<body>
+    <!--白菜价顶部-->
+    <div class="cabbage_heard">
+        <a class="cabbage_heard_left" href="#"><img src="../../images/kfc_left.jpg" alt=""></a>
+        <h1>白菜价淘宝内部券</h1>
+        <a class="cabbage_heard_right f_r" href="#"><img src="../../images/header_app.png" alt=""></a>
+    </div>
+
+    <!--白菜价导航-->
+    <div class="cabbage_nav">
+        <div id="moveUl" class="cabbage_nav_all">
+            <ul>
+            </ul>
+        </div>
+        <span class="glyphicon glyphicon-search f_r show"></span>
+    </div>
+
+    <!--隐藏框-->
+    <div class="seachBar">
+        <div class="txt f_l">
+            <span class="glyphicon glyphicon-search f_l"></span>
+            <input class="glyphicon glyphicon-search" type="text" placeholder="搜索商品即可查内部券">
+        </div>
+        <div class="sub f_l"><input type="submit" value="搜索"></div>
+
+    </div>
+
+    <!--白菜价图片-->
+    <div class="cabbage_img">
+        <img src="http://misc.manmanbuy.com/images/quanpic/quan_banner_wap.png" alt="">
+    </div>
+
+    <!--白菜价content-->
+    <div class="cabbage_content">
+        <ul>
+        </ul>
+    </div>
+
+    <!--白菜价底部返回-->
+    <div class="cabbage_endback">
+        <a href='#' alt=''>首页</a> &gt;
+        <a href='#' alt=''>白菜价</a>
+    </div>
+
+    <!--白菜价下载-->
+    <div class="cabbage_link media">
+        <div class="media-left media-middle">
+            <a href="#">
+                <img class="media-object" src="../../img/logo.png" alt="...">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">慢买买APP</h4>
+            <p>给喜欢网购的同学推荐下[慢慢买]这个app,第一时间更新国内外的优惠信息</p>
+            <a href='#' alt=''>立即下载</a>
+        </div>
+    </div>
+
+    <!--白菜价底部-->
+    <div class="cabbage_footer">
+        <p>
+            <a class="foot_one" href='#' alt=''>手机APP下载</a>
+            <a class="foot_two" href='#' alt=''>慢慢买手机版--</a>掌上比价平台
+        </p>
+        <p>m.manmanbuy.com/</p>
+    </div>
+
+    <!--固定定位-->
+    <div id="totop" class="cabbage_backtop">
+        <a href='#' alt=''><img src="../../images/top.jpg" alt=""></a>
+    </div>
+</body>
+
+</html>
+<script src="../../js/jquery-1.12.2.js"></script>
+<script src="../../js/template.js"></script>
+<script src="../../js/dp/itcast_tap.js"></script>
+<script src="../../js/iscroll.js"></script>
+<script src="../../js/dp/cabbage.js"></script>
+
+
+
+<!--导航模板-->
+<script id='template' type='text/html'>
+    {{each result as value index }}
+    <!--#[cabbage_pp.html?type={{value.titleId}}]-->
+    <li><a href="#" data-index="{{value.titleId}}">{{value.title}}</a></li>
+    {{/each}}
+</script>
+
+
+<!--内容模板-->
+<script id="content" type="text/html">
+    {{each result as value index }}
+    <li>
+        <div class="media">
+            <div class="media-left media-middle">
+                <a href="#">
+                    {{#value.productImg}}
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">{{#value.productName}}</h4>
+                <div class="content_pr">
+                    {{#value.productPrice}}
+                </div>
+                {{#value.productCouponRemain}}
+                <div class="b clearfix">
+                    <span class="q">{{#value.productCoupon}}</span>
+                    <span class="g f_r">{{#value.productHref}}</span>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </li>
+    {{/each}}
+</script>

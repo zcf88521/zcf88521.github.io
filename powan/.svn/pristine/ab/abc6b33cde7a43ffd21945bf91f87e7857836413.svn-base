@@ -1,0 +1,126 @@
+header {
+    height: 38px;
+    background-color: #ebebeb;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+    background: -moz-linear-gradient(top, #ffffff, #ebebeb);
+    background: -o-linear-gradient(top, #ffffff, #ebebeb);
+    border-top: solid 1px #ebebeb;
+    border-bottom: 1px solid #ccc;
+    line-height: 36px;
+    padding-left: 8px;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+
+.hd {
+    height: 36px;
+    background: #f3f3f3;
+    border: 1px solid #c8c8c8;
+    position: relative;
+    h3 {
+        position: absolute;
+        top: -20px;
+        left: 0;
+        list-style: none;
+        list-style: none;
+        height: 36px;
+        line-height: 36px;
+        font-size: 14px;
+        padding-left: 10px;
+        color: #874604;
+        font-weight: bold;
+    }
+}
+
+#top10 {
+    li {
+        height: 57px;
+        a {
+            display: block;
+            height: 36px;
+            width: 100%;
+            padding-left: 30px;
+            position: relative;
+            text-decoration: none;
+            em {
+                display: block;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                text-align: center;
+                line-height: 20px;
+                background-color: #ccc;
+                left: 5px;
+                top: 20px;
+            }
+            .inner {
+                width: 100%;
+                height: 36px;
+                .tit {
+                    font-size: 18px;
+                    color: #000000;
+                }
+                p {
+                    font-size: 14px;
+                    color: #999999;
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+}
+
+.sellList {
+    li {
+        height: 120px;
+        a {
+            text-decoration: none;
+            padding-left: 100px;
+            display: block;
+            width: 100%;
+            height: 107px;
+            position: relative;
+            .list_left {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                left: 0;
+                img {
+                    width: 100%;
+                }
+            }
+            .list_right {
+                width: 100%;
+                .top {
+                    min-height: 45px;
+                }
+                .center {
+                    height: 25px;
+                    .star {
+                        float: right;
+                    }
+                }
+                .bottom {
+                    height: 24px;
+                }
+            }
+        }
+    }
+}
+
+.pllist {
+    li {
+        text-decoration: none;
+        // padding-left: 100px;
+        display: block;
+        width: 100%;
+        height: 107px;
+        position: relative;
+        .list_right {
+            width: 100%;
+            .top {
+                min-height: 45px;
+            }
+        }
+    }
+}

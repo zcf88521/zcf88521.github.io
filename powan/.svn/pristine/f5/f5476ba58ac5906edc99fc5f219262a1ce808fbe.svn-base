@@ -1,0 +1,262 @@
+//头部
+body {
+  background: #f1f1f1;
+}
+
+header {
+  display: flex !important;
+  background: #ff8b00;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+  box-shadow: 0 2px 3px #ddd;
+  a {
+    display: block;
+    width: 50px;
+    height: 44px;
+  }
+  .back {
+    flex: 1;
+    a {
+      background: url(../../images/arr_left.png) no-repeat center;
+    }
+  }
+  h1 {
+    flex: 6;
+    display: block;
+    line-height: 44px;
+    text-align: center;
+    font-size: 1.4em;
+    color: white;
+    font-weight: 500;
+    margin: 0;
+  }
+  .appDown {
+    flex: 1;
+    position: relative;
+    // a {
+    //     background: url(../../images/header_app.png)no-repeat center/ 35px 35px;
+    // }
+  }
+}
+
+// 选择区域
+.select_box {
+  position: relative;
+  margin-top: 3px;
+  background: #fff;
+  .tabs {
+    padding: 0;
+    height: 38px;
+    display: flex;
+    li {
+      line-height: 38px;
+      text-align: center;
+      font-size: .8em;
+      flex: 2;
+      a {
+        display: block;
+      }
+      i {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        vertical-align: middle;
+        background: url("../../images/goods_down.svg") no-repeat center/20px 20px;
+      }
+      &:last-of-type {
+        flex: 1;
+        text-align: center;
+      }
+      .sift {
+        margin: 0 auto;
+        display: block;
+        width: 38px;
+        height: 38px;
+        background: url("../../images/sift.svg") no-repeat center/25px 25px;
+      }
+    }
+  }
+  .tab-content {
+    position: absolute;
+    left: 0px;
+    top: 39px;
+    width: 100%;
+    z-index: 99;
+    background:white;
+    .tabs-1,.tabs-2,.tabs-3, li{
+      background:white;
+      height: 40px;
+      line-height: 40px;
+      position: absolute;
+      border-bottom: 1px solid #dadada;
+      position: relative;
+      box-sizing: border-box;
+      a{
+        padding-left: 5px;
+      }
+      s {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        height: 20px;
+        width: 20px;
+        background: url(../../images/selectGou.svg) no-repeat;
+        display: none;
+        &.showS {
+          display:block;
+        }
+      }
+    }
+    & > div {
+
+      display: none;
+    }
+    .show {
+      display: block;
+    }
+    .hiddn {
+      display: none;
+    }
+  }
+
+  .tabs-sift {
+    background: #f7f7f7;
+    padding: 10px 0;
+    border-bottom: 1px solid #dadada;
+    padding-left: 10px;
+    .sift-seach {
+      margin-bottom: 10px;
+      width: 85%;
+      position: relative;
+      line-height: 35px;
+      background: white;
+      font-size: .8em;
+      color: #ccc;
+      input {
+        width: 100%;
+        height: 35px;
+        padding: 0px 28px;
+        box-shadow: 0 0 2px orange;
+        color: #666;
+      }
+      i, b {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      i {
+        top: 8px;
+        left: 6px;
+        background-image: url(../../images/fangdajing.svg);
+      }
+      b {
+        display: none;
+        top: 8px;
+        right: 6px;
+        background-image: url("../../images/yuanxx.svg");
+      }
+    }
+    .seachBtn {
+      width: 15%;
+      height: 35px;
+      text-align: center;
+
+      input {
+        line-height: 35px;
+        font-size: .7em;
+        background: transparent;
+      }
+    }
+  }
+  .sift-select {
+    padding: 0 10px 10px 0;
+    h3 {
+      font-size: .8em;
+      padding: 10px;
+    }
+    .selected {
+      span {
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        width: 22%;
+        float: left;
+        font-size: .7em;
+        text-align: center;
+        border:1px solid #eaeaea;
+        border-radius: 3px;
+        margin: 0 10px 10px 0;
+
+      }
+    }
+  }
+  .select-span{
+    background: #ff9501;
+    color: white;
+    border: 1px solid #ff9501;
+  }
+  .sift-sort{
+    h3{
+      padding: 10px;
+      font-size: .8em;
+    }
+    .sorts{
+      a{
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        width: 22%;
+        float: left;
+        font-size: .7em;
+        text-align: center;
+        border:1px solid #eaeaea;
+        border-radius: 3px;
+        margin: 0 10px 10px 0;
+      }
+    }
+  }
+}
+
+
+
+// 商品展示区
+
+.goodsShow {
+  .showUl {
+    padding: 6px;
+    li {
+      width: 50%;
+      float: left;
+      height: 239px;
+      a {
+        border: 1px solid #eee;
+        background: white;
+        display: block;
+        margin: 4px;
+        img {
+          width: 100%;
+          display: block;
+        }
+        .title {
+          margin-top: 6px;
+          padding: 0 5px;
+          overflow: hidden;
+          font-size: .6em;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          padding: 2px 0 2px 5px;
+        }
+        .price {
+          padding: 6px;
+          font-size: .8em;
+          span {
+            font-size: .4em;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/pl/index.css">
+  <title> 慢慢买比价网--手机版</title>
+</head>
+
+<body>
+  <!--头部-->
+  <header class="clearfix">
+    <div class="header_left f_l">
+      <a href="#"><img src="images/header_logo.png" alt="	慢慢买比价网--手机版"></a>
+    </div>
+    <div class="header_right f_r">
+      <a href="####"><img src="images/header_app.png" alt="手机app下载"></a>
+    </div>
+    <div class="header_hidden">
+      <a href="#" class="btn_serach"></a>
+      <div class="hidden_nav1"></div>
+      <div class="hidden_nav1"></div>
+      <a href="####"></a>
+    </div>
+  </header>
+  <!--商品搜索栏-->
+  <div class="goods_serach clearfix">
+    <form action="#">
+      <input type="serach" class="serachText" placeholder="请输入你想比价的商品">
+      <input type="submit" value="搜索" class="serachBtn">
+    </form>
+  </div>
+  <!--分类导航-->
+  <div class="goods_nav clearfix">
+
+    <div class="nav_item">
+      <a href="####">
+        <div class="nav_pic">
+          <img src="images/gengduo.png" alt="">
+        </div>
+        <div class="nav_name">
+          加载中...
+        </div>
+      </a>
+    </div>
+    <div class="nav_item">
+      <a href="####">
+        <div class="nav_pic">
+          <img src="images/gengduo.png" alt="">
+        </div>
+        <div class="nav_name">
+          加载中...
+        </div>
+      </a>
+    </div>
+    <div class="nav_item">
+      <a href="####">
+        <div class="nav_pic">
+          <img src="images/gengduo.png" alt="">
+        </div>
+        <div class="nav_name">
+          加载中...
+        </div>
+      </a>
+    </div>
+    <div class="nav_item">
+      <a href="####">
+        <div class="nav_pic">
+          <img src="images/gengduo.png" alt="">
+        </div>
+        <div class="nav_name">
+          加载中...
+        </div>
+      </a>
+    </div>
+    <div class="nav_item">
+      <a href="####">
+        <div class="nav_pic">
+          <img src="images/gengduo.png" alt="">
+        </div>
+        <div class="nav_name">
+          加载中...
+        </div>
+      </a>
+    </div>
+    <div class="nav_item">
+      <a href="####">
+        <div class="nav_pic">
+          <img src="images/gengduo.png" alt="">
+        </div>
+        <div class="nav_name">
+          加载中...
+        </div>
+      </a>
+    </div>
+    <div class="nav_item">
+      <a href="####">
+        <div class="nav_pic">
+          <img src="images/gengduo.png" alt="">
+        </div>
+        <div class="nav_name">
+          加载中...
+        </div>
+      </a>
+    </div>
+    <div class="nav_item">
+      <!--style="width:120px;height:120px;backgroundColor:green"-->
+      <a href="####">
+        <div class="nav_pic">
+          <img src="images/gengduo.png" alt="">
+        </div>
+        <div class="nav_name">
+          加载中...
+        </div>
+      </a>
+    </div>
+    <div class="nav_item">
+      <a href="####">
+        <div class="nav_pic">
+          <img src="images/gengduo.png" alt="">
+        </div>
+        <div class="nav_name">
+          加载中...
+        </div>
+      </a>
+    </div>
+    <div class="nav_item">
+      <a href="####">
+        <div class="nav_pic">
+          <img src="images/gengduo.png" alt="">
+        </div>
+        <div class="nav_name">
+          加载中...
+        </div>
+      </a>
+    </div>
+    <div class="nav_item">
+      <a href="####">
+        <div class="nav_pic">
+          <img src="images/gengduo.png" alt="">
+        </div>
+        <div class="nav_name">
+          加载中...
+        </div>
+      </a>
+    </div>
+    <div class="nav_item">
+      <a href="####">
+        <div class="nav_pic">
+          <img src="images/gengduo.png" alt="">
+        </div>
+        <div class="nav_name">
+          加载中...
+        </div>
+      </a>
+    </div>
+
+
+  </div>
+  <!--折扣推荐区域-->
+  <div class="discount_push clearfix">
+    <div class="discount_title">
+      <a href="moneyctrl.html">
+        <h4 class="f_l">超值折扣推荐</h4>
+        <img class="f_r" src="images/more.png" alt="">
+      </a>
+    </div>
+    <div class="discount_con">
+      <ul>
+        <li>
+          <a href="####">
+            <div class="con_left">
+              <img src="images/coupon_sample1.jpg" alt="移动端凑单品：海天 鲜味 生抽 1.28L">
+            </div>
+            <div class="con_right">
+              <div class="con_title">
+                <p>移动端凑单品：海天 鲜味 生抽 1.28L<span>10.9元</span> </p>
+
+              </div>
+              <div class="con_det">
+                <span class='f_l'>京东商城&nbsp;|&nbsp;10-25 14:10</span>
+                <span class='f_r'><i></i>有999人评论</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="####">
+            <div class="con_left">
+              <img src="images/coupon_sample1.jpg" alt="移动端凑单品：海天 鲜味 生抽 1.28L">
+            </div>
+            <div class="con_right">
+              <div class="con_title">
+                <p>移动端凑单品：海天 鲜味 生抽 1.28L<span>10.9元</span> </p>
+
+              </div>
+              <div class="con_det">
+                <span class='f_l'>京东商城&nbsp;|&nbsp;10-25 14:10</span>
+                <span class='f_r'><i></i>有999人评论</span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--更多优惠信息-->
+  <div class="coupon_mess">
+    <a href="####" class="coupon_link">
+    更多优惠信息 »
+  </a>
+  </div>
+  <!--品牌排行-->
+  <div class="brand_rank">
+    <a href="####">
+      <h4 class="f_l">品牌排行</h4>
+      <img class="f_r" src="images/more.png" alt="">
+    </a>
+  </div>
+  <!--底部-->
+  <footer>
+    <div class="footer_top">
+      <a href="####" class="footer_log">登录</a>
+      <a href="####" class="footer_log">注册</a>
+      <a href="#" class="footer_back"><img src="images/returnTop.png" alt="">返回顶部</a>
+    </div>
+    <div class="footer_bottom">
+      <p>
+        <a href="http://m.manmanbuy.com/?o=download">手机APP下载</a> <a href="http://m.manmanbuy.com">
+                    慢慢买手机版</a> -- 掌上比价平台</p>
+      <p>
+        m.manmanbuy.com
+      </p>
+    </div>
+  </footer>
+  <!--悬浮app链接-->
+  <div class="app_link">
+    <a href="http://m.manmanbuy.com/?o=download">
+      <img src="images/app_link.png">
+    </a>
+    <span class="app_close"></span>
+  </div>
+</body>
+
+</html>
+<script src='js/jquery-1.12.2.js'></script>
+<script src="js/touch_click.js"></script>
+
+<script id="template" type="text/html">
+  {{each result as value index}}
+  <div class="nav_item">
+    <a href="{{value.titlehref}}">
+      <div class="nav_pic">
+        {{#value.img}}
+      </div>
+      <div class="nav_name">
+        {{value.name}}
+      </div>
+    </a>
+  </div>
+  {{/each}}
+</script>
+<script id="template2" type="text/html">
+  {{each result as value index}}
+  <li>
+    <a href="inland_detail.html?productid={{value.productId}}">
+      <div class="con_left">
+        {{#value.productImgSm}}
+      </div>
+      <div class="con_right">
+        <div class="con_title">
+          <p>{{value.productName}}<span>{{value.productPinkage}}</span> </p>
+
+        </div>
+        <div class="con_det">
+          <span class='f_l'>{{value.productFrom}}&nbsp;|&nbsp;{{value.productTime}}</span>
+          <span class='f_r'><i></i>{{value.productComCount}}</span>
+        </div>
+      </div>
+    </a>
+  </li>
+  {{/each}}
+</script>
+<script src='js/template.js'></script>
+<script src='js/pl/index_pl.js'></script>
